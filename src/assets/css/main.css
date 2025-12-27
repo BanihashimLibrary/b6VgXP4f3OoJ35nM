@@ -1,20 +1,15 @@
-@font-face {
-  font-family: 'lateef';
-  src: url(/src/assets/fonts/Lateef-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --main-bk-clr: rgb(252, 248, 243);
+  --tg-safe-area-test: 0px;
+  --tg-safe-content-test: 30px;
+  --tg-safe-mrgin: calc(var(--tg-safe-area-test) + var(--tg-safe-content-test));
+  --tg-mrgn-to-ui-btn: 110px;
+  --tg-ui-btn-hyt: 33px;
+  --app-top-btns-mrgn: calc((var(--tg-safe-mrgin) - var(--tg-ui-btn-hyt)*(-1)));
+  --txt-shd: 1px 1px 5px rgba(58, 35, 0, 0.368);
 }
-@font-face {
-  font-family: 'lateef-xl';
-  src: url(/src/assets/fonts/Lateef-ExtraLight.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
 #app {
-  
-  font-weight: normal;
-  
+  font-weight: normal; 
 }
 * {
   box-sizing: border-box;
@@ -23,10 +18,9 @@ body, html {
   margin: 0px;
   padding: 0px;
   font-size: 1rem;
-  background-color: rgb(252, 248, 243);
+  background-color: var(--main-bk-clr);
 }
 
-      
 .unselectable {
   user-select: none; 
   -webkit-user-select: none; 
