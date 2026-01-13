@@ -1,12 +1,18 @@
 :root {
   --main-bk-clr: rgb(252, 248, 243);
-  --tg-safe-area-test: 0px;
-  --tg-safe-content-test: 30px;
-  --tg-safe-mrgin: calc(var(--tg-safe-area-test) + var(--tg-safe-content-test));
+  --tg-safe-area-inset-top: 0px;
+  --tg-safe-area-inset-bottom: 0px;
+  --tg-safe-area-inset-right: 0px;
+  --tg-safe-area-inset-left: 0px;
+  --tg-content-safe-area-inset-top: 30px;
+  --tg-content-safe-area-inset-bottom: 0px;
+  --tg-content-safe-area-inset-right: 0px;
+  --tg-content-safe-area-inset-left: 0px;
+  --tg-safe-mrgin: calc(var(--tg-safe-area-inset-top) + var(--tg-content-safe-area-inset-top));
   --tg-mrgn-to-ui-btn: 110px;
   --tg-ui-btn-hyt: 33px;
-  --app-top-btns-mrgn: calc((var(--tg-safe-mrgin) - var(--tg-ui-btn-hyt)*(-1)));
   --txt-shd: 1px 1px 5px rgba(58, 35, 0, 0.368);
+  --txt-shd2: 0px 1px 3px rgba(58, 35, 0, 0.405);
 }
 #app {
   font-weight: normal; 
@@ -32,7 +38,6 @@ body, html {
 
 input {
   font-size: 1.3rem;
-  user-select: all;
 }
 
 a {
